@@ -39,36 +39,36 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+    \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
-  \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
-  }
+    \item\small{
+        \textbf{#1}{: #2 \vspace{-2pt}}
+    }
 }
 
 % Just in case someone needs a heading that does not need to be in a list
 \newcommand{\resumeHeading}[4]{
     \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+    \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+        \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -85,57 +85,55 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large Grant Lemons}                                & Email : \href{mailto:grant0lemons@gmail.com}{grant0lemons@gmail.com}          \\
-  \href{https://www.linkedin.com/in/grant-lemons/}{LinkedIn}  & Mobile : \href{tel:+2149806898}{+1-214-980-6898}                              \\
+    \textbf{\Large Grant Lemons}                                & Email : \href{mailto:grant0lemons@gmail.com}{grant0lemons@gmail.com}          \\
+    \href{https://www.linkedin.com/in/grant-lemons/}{LinkedIn}  & Mobile : \href{tel:+2149806898}{+1-214-980-6898}                              \\
 \end{tabular*}
 
 
 %-----------EDUCATION-----------------
 \section{Education}
-  \resumeSubHeadingListStart
+    \resumeSubHeadingListStart
     \resumeSubheading
-      {Alcuin School}{Dallas, TX}
-      {Aug. 2019 -- Present}
-  \resumeSubHeadingListEnd
+        {Alcuin School}{Dallas, TX}
+        {Aug. 2019 -- Present}{}
+    \resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
-  \resumeSubHeadingListStart
-
+    \resumeSubHeadingListStart
     \resumeSubheading
-      {Headstorm}{Dallas, TX}
-      {Software Consulting Intern}{Summer 2022}
-      \resumeItemListStart
-        \resumeItem{Constellation}
-          {I worked on a staffing metrics and scheduling internal app structured to mimic a client project as a part of the Headstorm Internship Program. This app was built from the ground up by our team to serve the needs of the company's directors with a more intuitive interface than the program they had previously been using and a more robust feature set that allowed them to assign resources to projects and view allocation in a person or project specific view.
-          I handled a majority of the backend and database work on this project where I got familiar with TypeScript, Express.js, Sequelize ORM, and PostgreSQL. I also worked on updating our database from third party APIs using AWS Lambdas.}
-      \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
+        {Headstorm}{Dallas, TX}
+        {Software Consulting Intern}{Summer 2022}
+        \resumeItemListStart
+            \resumeItem{Constellation Staffing App}
+            {I worked on a staffing metrics and scheduling internal application structured to mimic a client project as a part of the Headstorm Internship Program. This app was built from the ground up by our team to serve the needs of the company's directors with a more intuitive interface than the program they had previously been using and a more robust feature set that allowed them to assign resources to projects and view allocation in a person or project specific view.
+            I handled a majority of the backend and database work on this project where I got familiar with TypeScript, Express.js, Sequelize ORM, and PostgreSQL. I also worked on updating our database from third party APIs using AWS Lambdas.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Projects}
-  \resumeSubHeadingListStart
-    \resumeSubItem{Waterlevel Analytics}
-      {In progress system to measure and analyze pool waterlevels using Rust, AWS, & Arduino.}
-    \resumeSubItem{Advisory Creator}
-      {In progress multi-tier application to intelligently create and manage groups of students and advisors using Svelte, Rust, & AWS.}
-    \resumeSubItem{Light Control}
-      {Scripts to interface with the SmartThings API to do funky things with my lights. Written in Python.}
-  \resumeSubHeadingListEnd
+    \resumeSubHeadingListStart
+        \resumeSubItem{Waterlevel Analytics}
+            {In progress system to measure and analyze pool waterlevels using Rust, AWS, \& Arduino.}
+        \resumeSubItem{Advisory Creator}
+            {In progress multi-tier application to intelligently create and manage groups of students and advisors using Svelte, Rust, \& AWS.}
+        \resumeSubItem{Light Control}
+            {Scripts to interface with the SmartThings API to do funky things with my lights. Written in Python.}
+    \resumeSubHeadingListEnd
 
 
---------PROGRAMMING SKILLS------------
+% --------PROGRAMMING SKILLS------------
 \section{Programming Skills}
- \resumeSubHeadingListStart
-   \item{
-     \textbf{Languages}{: Rust, Python, Javascript, SQL, Java, Bash/Zsh}
-     \hfill
-     \textbf{Technologies}{: AWS, Docker, \LaTeX, Git, Regex}
-   }
- \resumeSubHeadingListEnd
-
+    \resumeSubHeadingListStart
+        \item{
+            \textbf{Languages}{: Rust, Python, Javascript, SQL, Java, Bash/Zsh}
+        }
+        \item{
+            \textbf{Technologies}{: AWS, Docker, \LaTeX, Git, Regex}
+        }
+    \resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
