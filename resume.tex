@@ -4,7 +4,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,12pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -17,6 +17,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{XCharter}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -39,7 +40,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-    \vspace{-4pt}\scshape\raggedright\large
+    \vspace{-4pt}\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 %-------------------------
@@ -84,9 +85,9 @@
 \begin{document}
 
 %----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-    \textbf{\Large Grant Lemons}                                & Email : \href{mailto:grant0lemons@gmail.com}{grant0lemons@gmail.com}          \\
-    \href{https://www.linkedin.com/in/grant-lemons/}{LinkedIn}  & Mobile : \href{tel:+2149806898}{+1-214-980-6898}                              \\
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}l}
+    \textbf{\Large Grant Lemons}                                & Email: \href{mailto:grant0lemons@gmail.com}{grant0lemons@gmail.com}          \\
+    \href{https://www.linkedin.com/in/grant-lemons/}{LinkedIn}  & Mobile: \href{tel:+2149806898}{+1-214-980-6898}                              \\
 \end{tabular*}
 
 
@@ -107,20 +108,37 @@
         {Software Consulting Intern}{Summer 2022}
         \resumeItemListStart
             \resumeItem{Constellation Staffing App}
-            {I worked on a staffing metrics and scheduling internal application structured to mimic a client project as a part of the Headstorm Internship Program. This app was built from the ground up by our team to serve the needs of the company's directors with a more intuitive interface than the program they had previously been using and a more robust feature set that allowed them to assign resources to projects and view allocation in a person or project specific view.
-            I handled a majority of the backend and database work on this project where I got familiar with TypeScript, Express.js, Sequelize ORM, and PostgreSQL. I also worked on updating our database from third party APIs using AWS Lambdas.}
+            {
+                I worked on an internal application structured to mimic a client project as a part of the Headstorm Internship Program. This project involved building a staffing metrics and scheduling application from the ground up to serve the needs of the company's directors. The application boasted an intuitive interface and a robust feature set that allowed company leadership to assign resources to projects and view person and project specific allocation.\\
+                \vspace{0.3cm}
+                I developed a majority of the backend and database work on this project. My process performed automatic database updates using AWS Lambda. Through this I learned TypeScript, Express.js, Sequelize ORM, and PostgreSQL.\\
+                \vspace{0.3cm}
+                I worked with a team of interns and consultants in a agile scrum environment. I presented the project outcomes to the company's senior leadership upon the completion of the internship.
+            }
         \resumeItemListEnd
     \resumeSubHeadingListEnd
+    
 
 %-----------PROJECTS-----------------
-\section{Projects}
+\section{Personal Projects}
     \resumeSubHeadingListStart
         \resumeSubItem{Waterlevel Analytics}
-            {In progress system to measure and analyze pool waterlevels using Rust, AWS, \& Arduino.}
+            {System to measure and analyze pool waterlevels using Rust, AWS, and Arduino.}
         \resumeSubItem{Advisory Creator}
-            {In progress multi-tier application to intelligently create and manage groups of students and advisors using Svelte, Rust, \& AWS.}
+            {Multi-tier application to intelligently create and manage groups of students and advisors using Svelte, Rust, and AWS.}
         \resumeSubItem{Light Control}
             {Scripts to interface with the SmartThings API to do funky things with my lights. Written in Python.}
+    \resumeSubHeadingListEnd
+
+
+    \section{Certifications}
+    \resumeSubHeadingListStart
+        \item{
+            AWS Solutions Architect -- Associate\\
+            \hspace{.5cm}\small Issued: Aug. 2022\\
+            \hspace{.5cm}\small Expires: Aug. 2025\\
+            \hspace{.5cm}\small Credential ID: S8XVNC12QBF41B57\\
+        }
     \resumeSubHeadingListEnd
 
 
@@ -128,10 +146,10 @@
 \section{Programming Skills}
     \resumeSubHeadingListStart
         \item{
-            \textbf{Languages}{: Rust, Python, Javascript, SQL, Java, Bash/Zsh}
+            \textbf{Languages}{: Rust, Python, TypeScript, SQL, Java, Bash/Zsh}
         }
         \item{
-            \textbf{Technologies}{: AWS, Docker, \LaTeX, Git, Regex}
+            \textbf{Technologies}{: AWS, Docker, LaTeX, Git, Regex, PostgreSQL}
         }
     \resumeSubHeadingListEnd
 
