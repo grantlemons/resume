@@ -17,7 +17,13 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage{XCharter}
+\usepackage{charter}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage{microtype}
+% \usepackage{ragged2e}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -64,7 +70,7 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
         \textbf{#1} & #2 \\
         \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -90,14 +96,19 @@
                                         & Mobile: \href{tel:+2149806898}{(+1) 214-980-6898}                             \\
                                         & LinkedIn: \href{https://www.linkedin.com/in/grant-lemons/}{grant-lemons}      \\
 \end{tabular*}
+\vspace*{-.8cm}
 
 
 %-----------EDUCATION-----------------
 \section{Education}
     \resumeSubHeadingListStart
     \resumeSubheading
+        {Colorado School of Mines}{Golden, CO}
+        {Aug. 2023 -- Present}{}
+    \vspace{-.2cm}
+    \resumeSubheading
         {Alcuin School}{Dallas, TX}
-        {Aug. 2019 -- Present}{}
+        {Aug. 2019 -- May 2023}{}
     \resumeSubHeadingListEnd
 
 
@@ -106,46 +117,46 @@
     \resumeSubHeadingListStart
     \resumeSubheading
         {Headstorm}{Dallas, TX}
+        {Software Consulting Intern}{Summer 2023}\\
+        \vspace{0.3cm}
+
+        \textbf{Constellation Staffing App v2}\\
+        I worked on an internal project focused on refreshing the visuals and backend of the internal Constellation Staffing Application as a part of the Headstorm Internship Program.
+        The project involved building a new frontend from the ground up as we migrated to a GraphQL backend as well as implementing better coding standards and integration testing.
+        As a part of the Internship Program, I learned valuable Project Management skills through occasionally running scrum ceremonies.
+        Through this project I learned React, GraphQL, and some Project Management skills.
+        \vspace{0.1cm}
+    \resumeSubheading
+        {Capstone Project}{Dallas, TX}
+        {Alcuin School}{Aug. 2023 -- Feb. 2023}\\
+        \vspace{0.3cm}
+
+        \textbf{Advisory Generator}\\
+        I successfully created and delivered a multi-tier application to create and manage faculty---student mentorship groups composed of students and teachers as my capstone project.
+        The project was based on the needs of the Dean of Students, whom I interviewed for project requirements and acted as my client in this project.\\
+        \vspace{0.1cm}
+        The project relied on AWS for Authentication and Authorization using Cognito, static web hosting of the frontend on S3, as well as the hosting of a graph database and the backend on ECS using Fargate.
+        Through the frontend of my app I learned the Svelte web framework and was exposed to CSS, and through the backend I matured my understanding of the Rust programming language.\\
+        \vspace{0.1cm}
+    \resumeSubheading
+        {Headstorm}{Dallas, TX}
         {Software Consulting Intern}{Summer 2022}\\
-        \vspace{0.4cm}
+        \vspace{0.3cm}
 
         \textbf{Constellation Staffing App}\\
-        I worked on an internal application structured to mimic a client project as a part of the Headstorm Internship Program. This project involved building a staffing metrics and scheduling application from the ground up to serve the needs of the company's directors. The application boasted an intuitive interface and a robust feature set that allowed company leadership to assign resources to projects and view person and project specific allocation.\\
-        \vspace{0.15cm}
-        I developed a majority of the backend and database work on this project. My process performed automatic database updates using AWS Lambda. Through this I learned TypeScript, Express.js, Sequelize ORM, and PostgreSQL.\\
-        \vspace{0.15cm}
-        I worked with a team of interns and consultants in a agile scrum environment. I presented the project outcomes to the company's senior leadership upon the completion of the internship.\\
-    \resumeSubHeadingListEnd
-
-\section{Capstone Project}
-    \resumeSubHeadingListStart
-    \item[]{
-    \textbf{Advisory Generator}\\
-    I am working on a multi-tier application to create and manage faculty--student mentorship groups composed of students and teachers as my IB Computer Science Internal Assessment.
-    The project is based on the needs of the dean of students, whom I interviewed for project requirements and is acting as my client in this project.\\
-    \vspace{0.15cm}
-    The backend of the project involves creating and implementing an algorithm to assign students to groups based on editable weighted values for aspects of the groups such as grade-based and gender-based diversity.
-    The frontend for the project entails creating a user-friendly service to interface with my algorithm.\\
-    \vspace{0.15cm}
-    The project relies on AWS for Authentication and Authorization using Cognito, static web hosting of the frontend on S3, as well as the hosting of a graph database and the backend on ECS using Fargate.
-    Through the frontend of my app I am learning the Svelte web framework and CSS, while through the backend I am maturing my understanding of the Rust programming language.\\
-    }
-    \resumeSubHeadingListEnd
-
-%-----------PROJECTS-----------------
-\section{Personal Projects}
-    \resumeSubHeadingListStart
-        \resumeSubItem{Waterlevel Analytics}
-            {System to measure and analyze pool waterlevels using Rust, AWS, and Arduino.}
-        \resumeSubItem{Light Control}
-            {Scripts to interface with the SmartThings API to do funky things with my lights. Written in Python.}
+        I worked on an internal application structured to mimic a client project as a part of the Headstorm Internship Program. This project involved building a staffing metrics and scheduling application from the ground up to serve the needs of the company's directors. The application boasted a robust feature set that allowed company leadership to assign resources to projects and view person and project specific allocation.\\
+        \vspace{0.1cm}
+        I developed a majority of the backend and database work on this project. My ETL program performed automatic database updates using AWS Lambda. Through this I learned TypeScript, Express.js, Sequelize ORM, and PostgreSQL.\\
+        \vspace{0.1cm}
+        I worked with a team of interns and consultants in an agile scrum environment. I presented the project outcomes to the company as a whole upon the completion of the internship.\\
     \resumeSubHeadingListEnd
 
 
-    \section{Certifications}
+%-----------CERTIFICATIONS------------
+\section{Certifications}
     \resumeSubHeadingListStart
         \item{
-            AWS Solutions Architect -- Associate\\
+            \textbf{AWS Solutions Architect --- Associate}\\
             \hspace{.3cm}\small Issued: Aug. 2022\\
             \hspace{.3cm}\small Expires: Aug. 2025\\
             \hspace{.3cm}\small Credential ID: S8XVNC12QBF41B57\\
@@ -161,9 +172,7 @@
         }
         \vspace{-.3cm}
         \item{
-            \textbf{Technologies}{: AWS, Docker, LaTeX, Git, Regex, PostgreSQL}
+            \textbf{Technologies}{: AWS, Docker, React, Git, Playwright, PostgreSQL, Neo4J}
         }
     \resumeSubHeadingListEnd
-
-%-------------------------------------------
 \end{document}
