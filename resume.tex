@@ -4,7 +4,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper, 12pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -18,6 +18,7 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \usepackage{charter}
+\usepackage{multirow}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -52,7 +53,7 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
-    \item\small{
+    \small{
         \textbf{#1}{: #2 \vspace{-3pt}}
     }
 }
@@ -66,15 +67,15 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-    \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \vspace{-1pt}
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
         \textbf{#1} & #2 \\
         \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
         \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-5pt}
 }
@@ -92,87 +93,86 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}l}
-    \textbf{\Large Grant Lemons}        & Email: \href{mailto:grant0lemons@gmail.com}{grantlemons@aol.com}           \\
-                                        & Mobile: \href{tel:+2149806898}{(+1) 214-980-6898}                             \\
-                                        & LinkedIn: \href{https://www.linkedin.com/in/grant-lemons/}{grant-lemons}      \\
+    \multirow{2}{*}{\textbf{\LARGE Grant Lemons}}            & Email: \href{mailto:grant0lemons@gmail.com}{grantlemons@aol.com}              \\
+                                                            & Mobile: \href{tel:+2149806898}{(+1) 214-980-6898}                             \\
+                                                            & LinkedIn: \href{https://www.linkedin.com/in/grant-lemons/}{grant-lemons}      \\
+                                                            & GitHub: \href{https://github.com/grantlemons}{grantlemons}                    \\
 \end{tabular*}
-\vspace*{-.8cm}
+\vspace*{-.4cm}
 
 
 %-----------EDUCATION-----------------
 \section{Education}
-    \resumeSubHeadingListStart
     \resumeSubheading
         {Colorado School of Mines}{Golden, CO}
-        {Aug. 2023 -- Present}{}
-    \vspace{-.2cm}
+        {B.S. Computer Science}{Aug. 2023 -- Present}
+    \vspace{.3cm}
     \resumeSubheading
         {Alcuin School}{Dallas, TX}
-        {Aug. 2019 -- May 2023}{}
-    \resumeSubHeadingListEnd
+        {International Baccalaureate Diploma Program}{Aug. 2019 -- May 2023}
 
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
-    \resumeSubHeadingListStart
     \resumeSubheading
         {Headstorm}{Dallas, TX}
         {Software Consulting Intern}{Summer 2023}\\
-        \vspace{0.3cm}
 
-        \textbf{Constellation Staffing App v2}\\
-        I worked on an internal project focused on refreshing the visuals and backend of the internal Constellation Staffing Application as a part of the Headstorm Internship Program.
-        The project involved building a new frontend from the ground up as we migrated to a GraphQL backend as well as implementing better coding standards and integration testing.
-        As a part of the Internship Program, I learned valuable Project Management skills through occasionally running scrum ceremonies.
-        Through this project I learned React, GraphQL, and some Project Management skills.
-        \vspace{0.1cm}
+        \vspace{.1cm}
+        \begin{itemize}
+            \itemsep-3pt
+            \item Built a portion of a new frontend from the ground up in \textbf{React}
+            \item Wrote \textbf{GraphQL} queries to retrieve data from the backend
+            \item Spearheaded numerous \textbf{Agile Scrum} ceremonies such as standups
+            \item Became a leader in \textbf{source control} and \textbf{Playwright integration testing} within the project team
+            \item Designed user acceptance tests to collect stakeholder feedback
+            \item Presented outcomes to company leadership and the company as a whole
+        \end{itemize}
+
+    \vspace{.2cm}
     \resumeSubheading
         {Capstone Project}{Dallas, TX}
-        {Alcuin School}{Aug. 2023 -- Feb. 2023}\\
-        \vspace{0.3cm}
+        {Alcuin School}{Aug. 2022 -- Feb. 2023}\\
 
-        \textbf{Advisory Generator}\\
-        I successfully created and delivered a multi-tier application to create and manage faculty---student mentorship groups composed of students and teachers as my capstone project.
-        The project was based on the needs of the Dean of Students, whom I interviewed for project requirements and acted as my client in this project.\\
-        \vspace{0.1cm}
-        The project relied on AWS for Authentication and Authorization using Cognito, static web hosting of the frontend on S3, as well as the hosting of a graph database and the backend on ECS using Fargate.
-        Through the frontend of my app I learned the Svelte web framework and was exposed to CSS, and through the backend I matured my understanding of the Rust programming language.\\
-        \vspace{0.1cm}
+        \vspace*{.1cm}
+        \begin{itemize}
+            \itemsep-3pt
+            \item Created and delivered multi-tier SaaS application for the Dean of Students
+            \item Interviewed key stakeholders and gathered project requirements
+            \item Implemented Authentication and Authorization using \textbf{AWS Cognito} and \textbf{JSON Web Tokens}
+            \item Deployed containerized backend instances using \textbf{AWS Fargate} and \textbf{AWS ECR}
+            \item Created a frontend in the \textbf{Svelte} framework, and a backend in the \textbf{Rust} programming language
+        \end{itemize}
+
+    \vspace{.2cm}
     \resumeSubheading
         {Headstorm}{Dallas, TX}
         {Software Consulting Intern}{Summer 2022}\\
-        \vspace{0.3cm}
 
-        \textbf{Constellation Staffing App}\\
-        I worked on an internal application structured to mimic a client project as a part of the Headstorm Internship Program. This project involved building a staffing metrics and scheduling application from the ground up to serve the needs of the company's directors. The application boasted a robust feature set that allowed company leadership to assign resources to projects and view person and project specific allocation.\\
-        \vspace{0.1cm}
-        I developed a majority of the backend and database work on this project. My ETL program performed automatic database updates using AWS Lambda. Through this I learned TypeScript, Express.js, Sequelize ORM, and PostgreSQL.\\
-        \vspace{0.1cm}
-        I worked with a team of interns and consultants in an agile scrum environment. I presented the project outcomes to the company as a whole upon the completion of the internship.\\
-    \resumeSubHeadingListEnd
-
+        \vspace*{.1cm}
+        \begin{itemize}
+            \itemsep-3pt
+            \item Designed the backend and database schema for a staffing metrics and project scheduling application
+            \item Created and refined an \textbf{ETL} script in \textbf{Python} to run in \textbf{AWS Lambda}
+            \item Developed a complex backend in \textbf{TypeScript} using \textbf{Express.js} and \textbf{Sequelize ORM}
+            \item Deployed a \textbf{PostgreSQL} database to \textbf{AWS RDS}
+            \item Engineered the networking between cloud instances using \textbf{AWS VPC}
+            \item Presented outcomes to company leadership and the company as a whole
+            \item Spoke on project progress in numerous product demos to key stakeholders
+        \end{itemize}
 
 %-----------CERTIFICATIONS------------
 \section{Certifications}
-    \resumeSubHeadingListStart
-        \item{
-            \textbf{AWS Solutions Architect --- Associate}\\
-            \hspace{.3cm}\small Issued: Aug. 2022\\
-            \hspace{.3cm}\small Expires: Aug. 2025\\
-            \hspace{.3cm}\small Credential ID: S8XVNC12QBF41B57\\
-        }
-    \resumeSubHeadingListEnd
+    \vspace{-1pt}
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{AWS Solutions Architect --- Associate} & \textit{\small Aug. 2022 -- Aug. 2025} \\
+        \small Credential ID: S8XVNC12QBF41B57
+    \end{tabular*}\vspace{-7pt}
 
 
 % --------PROGRAMMING SKILLS------------
 \section{Programming Skills}
-    \resumeSubHeadingListStart
-        \item{
-            \textbf{Languages}{: Rust, Java, Python, TypeScript, SQL, Bash/Zsh}
-        }
-        \vspace{-.3cm}
-        \item{
-            \textbf{Technologies}{: AWS, Docker, React, Git, Playwright, PostgreSQL, Neo4J}
-        }
-    \resumeSubHeadingListEnd
+    \textbf{Languages}{: Rust, Java, Python, TypeScript, SQL, Bash/Zsh}\\
+    \vspace{.1cm}
+    \textbf{Technologies}{: AWS, Docker, React, Git, Playwright, PostgreSQL, Neo4J}
 \end{document}
