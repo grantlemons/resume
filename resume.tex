@@ -69,8 +69,8 @@
 \newcommand{\resumeSubheading}[4]{
     \vspace{-1pt}
     \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
-        \textbf{#1} & #2 \\
-        \textit{\small#3} & \textit{\small #4} \\
+        \textbf{#1} & #4 \\
+        \textit{\small #3, #2}\\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -100,23 +100,11 @@
 \end{tabular*}
 \vspace*{-.4cm}
 
-
-%-----------EDUCATION-----------------
-\section{Education}
-    \resumeSubheading
-        {Colorado School of Mines}{Golden, CO}
-        {B.S. Computer Science}{Aug. 2023 -- Present}
-    \vspace{.3cm}
-    \resumeSubheading
-        {Alcuin School}{Dallas, TX}
-        {International Baccalaureate Diploma Program}{Aug. 2019 -- May 2023}
-
-
 %-----------EXPERIENCE-----------------
 \section{Experience}
     \resumeSubheading
-        {Headstorm}{Dallas, TX}
-        {Software Consulting Intern}{Summer 2023}\\
+        {Software Consulting Intern}{Dallas, TX}
+        {Headstorm}{Summer 2023}\\
 
         \vspace{.1cm}
         \begin{itemize}
@@ -126,7 +114,22 @@
             \item Spearheaded numerous \textbf{Agile Scrum} ceremonies such as standups
             \item Became a leader in \textbf{source control} and \textbf{Playwright integration testing} within the project team
             \item Designed user acceptance tests to collect stakeholder feedback
-            \item Presented outcomes to company leadership and the company as a whole
+        \end{itemize}
+
+    \vspace{.2cm}
+    \resumeSubheading
+        {Software Consulting Intern}{Dallas, TX}
+        {Headstorm}{Summer 2022}\\
+
+        \vspace*{.1cm}
+        \begin{itemize}
+            \itemsep-3pt
+            \item Designed the backend and database schema for multi-tier application
+            \item Created and refined an \textbf{ETL} script in \textbf{Python} to run in \textbf{AWS Lambda}
+            \item Developed a complex backend in \textbf{TypeScript} using \textbf{Express.js} and \textbf{Sequelize ORM}
+            \item Deployed a \textbf{PostgreSQL} database to \textbf{AWS RDS}
+            \item Engineered the networking between cloud instances using \textbf{AWS VPC}
+            \item Spoke on project progress in numerous product demos to key stakeholders
         \end{itemize}
 
     \vspace{.2cm}
@@ -137,29 +140,26 @@
         \vspace*{.1cm}
         \begin{itemize}
             \itemsep-3pt
-            \item Created and delivered multi-tier SaaS application for the Dean of Students
+            \item Created and delivered multi-tier SaaS application
             \item Interviewed key stakeholders and gathered project requirements
             \item Implemented Authentication and Authorization using \textbf{AWS Cognito} and \textbf{JSON Web Tokens}
             \item Deployed containerized backend instances using \textbf{AWS Fargate} and \textbf{AWS ECR}
             \item Created a frontend in the \textbf{Svelte} framework, and a backend in the \textbf{Rust} programming language
         \end{itemize}
 
-    \vspace{.2cm}
-    \resumeSubheading
-        {Headstorm}{Dallas, TX}
-        {Software Consulting Intern}{Summer 2022}\\
+%-----------EDUCATION-----------------
+\section{Education}
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{Colorado School of Mines} & Aug. 2023 -- Present \\
+        \textit{B.S. Computer Science}\\
+    \end{tabular*}
 
-        \vspace*{.1cm}
-        \begin{itemize}
-            \itemsep-3pt
-            \item Designed the backend and database schema for a staffing metrics and project scheduling application
-            \item Created and refined an \textbf{ETL} script in \textbf{Python} to run in \textbf{AWS Lambda}
-            \item Developed a complex backend in \textbf{TypeScript} using \textbf{Express.js} and \textbf{Sequelize ORM}
-            \item Deployed a \textbf{PostgreSQL} database to \textbf{AWS RDS}
-            \item Engineered the networking between cloud instances using \textbf{AWS VPC}
-            \item Presented outcomes to company leadership and the company as a whole
-            \item Spoke on project progress in numerous product demos to key stakeholders
-        \end{itemize}
+    \vspace*{.3cm}
+
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{Alcuin School} & Aug. 2019 -- May 2023 \\
+        \textit{International Baccalaureate Diploma}\\
+    \end{tabular*}\vspace{-7pt}
 
 %-----------CERTIFICATIONS------------
 \section{Certifications}
@@ -172,7 +172,7 @@
 
 % --------PROGRAMMING SKILLS------------
 \section{Programming Skills}
-    \textbf{Languages}{: Rust, Java, Python, TypeScript, SQL, Bash/Zsh}\\
+    \textbf{Languages}{: Rust, OCaml, Python, TypeScript, SQL, Bash/Zsh}\\
     \vspace{.1cm}
     \textbf{Technologies}{: AWS, Docker, React, Git, Playwright, PostgreSQL, Neo4J}
 \end{document}
